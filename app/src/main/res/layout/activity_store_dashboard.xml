@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_grey"
+    android:gravity="center"
+    tools:context=".store_dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            #layer 1 of 4
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                #Slot 1
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 1 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s1
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd1_store_inprocess_patient"
+                            android:gravity="center" />
+
+                        #No for s1
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        #Discription for s1
+                        #android:fontFamily="Calibri"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="store \n in-process patient"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                #Slot 2
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 2 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s2
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd2_wait_for_medicine"
+                            android:gravity="center" />
+
+                        #No for s2
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        #Discription for s2
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wait for medicine"
+                            android:textAllCaps="true"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(External / internal)"
+                            android:textAllCaps="true"
+                            android:layout_marginTop="-8dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="10dp"/>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            #layer 2 of 4
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                #Slot 3
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 3 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s3
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd3_stock_alert_patient"
+                            android:gravity="center" />
+
+                        #No for s3
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="51"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        #Discription for s3
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:text="stock alert\npatient"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                #Slot 4
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 4 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s4
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd4_stock_alert_patient"
+                            android:gravity="center" />
+
+                        #No for s4
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        #Discription for s4
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="stock alert\nstaf"
+                            android:textAllCaps="true"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            #layer 3 of 4
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                #Slot 5
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 5 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s5
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd5_stock_entry_pending"
+                            android:gravity="center" />
+
+                        #No for s5
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        #Discription for s5
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="stock entry\npending"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                #Slot 6
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 6 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s6
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd6_courier_out_word"
+                            android:gravity="center"
+                            />
+
+                        #No for s6
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="19dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:strokeColor="@color/colorPrimaryDark"
+                                app:strokeWidth="1dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-3dp"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:gravity="center"
+                                app:strokeColor="@color/colorPrimaryDark"
+                                app:cardCornerRadius="0dp"
+                                app:strokeWidth="1dp"
+                                android:layout_marginLeft="19dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-3dp"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+                        #Discription for s6
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Courier\nout word"
+                            android:textAllCaps="true"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            #layer 4 of 4
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                #Slot 7
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 7 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s7
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd7_courier_delivered"
+                            android:gravity="center" />
+
+                        #Discription for s7
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Courier\ndelivered"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_margin="5dp"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                #Slot 8
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    #Slot 8 linear layout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        #Image for s8
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/sd8_courier_received"
+                            android:gravity="center"
+                            />
+
+                        #No for s6
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="19dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:strokeColor="@color/colorPrimaryDark"
+                                app:strokeWidth="1dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-3dp"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:gravity="center"
+                                app:strokeColor="@color/colorPrimaryDark"
+                                app:cardCornerRadius="0dp"
+                                app:strokeWidth="1dp"
+                                android:layout_marginLeft="19dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:layout_marginTop="-3dp"
+                                    android:textSize="30dp"
+                                    android:textStyle="bold" />
+                            </com.google.android.material.card.MaterialCardView>
+
+                        </LinearLayout>
+                        #Discription for s8
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile app \ndispensary"
+                            android:textAllCaps="true"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

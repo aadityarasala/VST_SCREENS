@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/nav_dr_dashboard"
+        android:title="Doctor Dashboard"
+        android:checked="true" />
+
+        <item
+        android:id="@+id/nav_myprofile"
+        android:title="My Profile" />
+        <item
+            android:id="@+id/nav_pt_DB"
+            android:title="Patient Dashboard" />
+
+    </group>
+
+</menu>

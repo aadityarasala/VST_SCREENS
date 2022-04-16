@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".doctor_appointment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            #layer 1 of 3
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                #doctor card
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/doctor_card"
+                    android:gravity="center"
+                    app:cardCornerRadius="10dp">
+
+                    #Slot 1 doctor card
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/doctor_card"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            app:cardCornerRadius="45dp">
+                            #Image for doctor card
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/doctor_vector"
+                                android:gravity="center" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        #Discription for doctor card
+                        #android:fontFamily="Calibri"
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:gravity="center"
+                            android:text="Dr. Vishwas Gonenke"
+                            android:textColor="@color/drcard_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Medicine Specialist"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Civil Hospital, Gandhinagar"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+
+                        #linerlayout for buttons
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/doctor_card"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="5dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:elevation="100dp"
+                                    android:text="1000+ \nPatients"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp" />
+                                #Button for doctor card
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/drcard_blue" />
+                            </com.google.android.material.card.MaterialCardView>
+
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="25dp">
+
+                                #Button for doctor card
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/drcard_blue" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:elevation="100dp"
+                                    android:text="5+\nExperience"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp" />
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            #layer 2 of 3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                #textview
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:elevation="100dp"
+                    android:text="Appointment Date : 12th April 2022"
+                    android:textColor="@color/black"
+                    android:textSize="9dp" />
+
+                #scroll for time slot
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="horizontal">
+
+                        #dates group 1
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 2
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="7"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 3
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="8"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 4
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:gravity="center">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="9"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/white"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 5
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 6
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="11"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 7
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 8
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        #dates group 9
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="7dp"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            app:strokeColor="@color/light_grey"
+                            app:strokeWidth="1dp">
+
+                            #Linear layout for date
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                #Discription for dates and daes
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wed"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="14"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="APR"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="9dp" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            #layer 3 of 3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                #button morning evening
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:padding="5dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="7dp"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        app:strokeColor="@color/light_grey"
+                        app:strokeWidth="1dp">
+
+                        #Discription for MORNING
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="MORNING"
+                            android:textColor="@color/drcard_blue"
+                            android:textSize="12dp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="7dp"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        app:strokeColor="@color/light_grey"
+                        app:strokeWidth="1dp">
+
+                        #Discription for MORNING
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="EVENING"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                #Time slot
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="315dp"
+                    android:layout_height="110dp"
+                    app:cardBackgroundColor="@color/doctor_card">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            #Time slot 1
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="09:00"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                            #Time slot 2
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="8dp"
+                                android:layout_marginBottom="6dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="10:00"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                            #Time slot 3
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginBottom="6dp"
+                                android:backgroundTint="@color/drcard_blue"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="11:00"
+                                    android:textColor="@color/white"
+                                    android:textSize="12dp"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            #Time slot 4
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="8dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="12:00"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                            #Time slot 5
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="8dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="13:00"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                            #Time slot 6
+
+                            <com.google.android.material.card.MaterialCardView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="6dp"
+                                android:background="@color/transparent"
+                                android:gravity="center"
+                                app:cardCornerRadius="5dp"
+                                app:strokeColor="@color/light_grey"
+                                app:strokeWidth="1dp">
+
+                                #Discription for Time 1
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="14:00"
+                                    android:textColor="@color/black"
+                                    android:textSize="12dp" />
+
+                            </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                #time
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="13dp"
+                    android:elevation="100dp"
+                    android:text="Appointment Time : 11:00"
+                    android:textColor="@color/black"
+                    android:textSize="9dp" />
+
+                #Button
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    app:strokeColor="@color/drcard_blue"
+                    app:strokeWidth="1dp">
+
+                    #Book Appoinment
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Book Appointment"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="12dp" />
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
