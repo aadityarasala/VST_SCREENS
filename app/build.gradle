@@ -38,6 +38,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
     implementation 'com.google.androidx.gms:play-services-wearable:17.0.0'
+    //noinspection GradleCompatible
     implementation 'com.google.android.support:wearable:2.8.0'
 
 
