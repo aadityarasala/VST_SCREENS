@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vst_screens">
         <activity
-            android:name=".health_dashboard"
+            android:name=".doctor_appointment"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -19,11 +19,16 @@
             android:name=".store_dashboard"
             android:exported="false" />
         <activity
-            android:name=".doctor_appointment"
-            android:exported="true" />
+            android:name=".health_dashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".RECEPTION_Dashboard"
-            android:exported="true" />
+            android:exported="false" />
     </application>
 
 </manifest>
