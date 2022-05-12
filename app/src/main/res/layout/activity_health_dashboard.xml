@@ -22,6 +22,7 @@
             android:orientation="vertical">
 
             #dayes navigation
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,6 +61,7 @@
                         android:textSize="16dp"
                         android:textStyle="bold" />
                 </LinearLayout>
+
                 <ImageButton
                     android:layout_width="19dp"
                     android:layout_height="19dp"
@@ -71,63 +73,185 @@
             </LinearLayout>
 
             #cardview
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="355dp"
-                android:layout_height="265dp"
-                android:backgroundTint="#F8F8F9"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
+                android:backgroundTint="#F8F8F9"
                 app:cardCornerRadius="10dp">
 
                 #layer 1 2633
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginLeft="22dp"
-                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2633"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="70dp"/>
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="18dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@color/white"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/hd_edit"/>
-                    <ImageButton
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_marginLeft="100dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@color/white"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/hd_pause"/>
-                </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2633"
+                            android:textColor="@color/black"
+                            android:textSize="70dp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/hd_edit" />
+
+                        <ImageButton
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/white"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/hd_pause" />
+                    </LinearLayout>
                     #layer 2
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="/10000 Steps"
-                        android:textSize="16dp"
-                        android:textColor="@color/black"/>
+                        android:layout_marginLeft="22dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
                     #layer 3
+
+                    <ImageView
+                        android:layout_width="227dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/hd_meter" />
+
+                    #layer 3
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="22dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        #location
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="22.5dp"
+                                android:background="@color/white"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hd_location" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.75"
+                                android:text="1.74"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="KM"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        #fire
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:layout_marginEnd="60dp"
+                            android:layout_marginStart="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="22.5dp"
+                                android:background="@color/white"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hd_burn" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.75"
+                                android:text="143.1"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Calories"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        #time
+
+                        <LinearLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="22.5dp"
+                                android:background="@color/white"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/hd_time" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.75"
+                                android:text="0h 31m"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Walk Time"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-
-
             </com.google.android.material.card.MaterialCardView>
-
-
-
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
