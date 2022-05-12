@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:gravity="center"
     tools:context=".health_dashboard">
@@ -69,6 +70,61 @@
                     android:src="@drawable/hd_down" />
             </LinearLayout>
 
+            #cardview
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="355dp"
+                android:layout_height="265dp"
+                android:backgroundTint="#F8F8F9"
+                android:layout_marginTop="17dp"
+                app:cardCornerRadius="10dp">
+
+                #layer 1 2633
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2633"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="70dp"/>
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/hd_edit"/>
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hd_pause"/>
+                </LinearLayout>
+                    #layer 2
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/10000 Steps"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"/>
+                    #layer 3
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
 
 
 
