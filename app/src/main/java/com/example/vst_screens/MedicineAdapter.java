@@ -1,10 +1,19 @@
-package com.example;
+package com.example.vst_screens;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import com.example.vst_screens.inventory.medicine;
+
 public class MedicineAdapter extends BaseAdapter {
+
+    private Context context;
+    private list<medicine> medicinelist;
+
+
+
     @Override
     public int getCount() {
         return 0;
