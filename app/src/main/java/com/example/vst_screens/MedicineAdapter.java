@@ -44,6 +44,6 @@ public class MedicineAdapter extends BaseAdapter {
         TextView txtname = rootView.findViewById(R.id.name_MEDICINE);
         txtname.setText(medicinelist.get(i).getName());
 
-        return null;
+        return rootView;
     }
 }
