@@ -16,6 +16,7 @@
         android:layout_marginBottom="5dp">
 
         <Spinner
+            android:id="@+id/spinner_MEDICINE"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="17dp"/>
