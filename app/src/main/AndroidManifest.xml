@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vst_screens">
         <activity
-            android:name=".medicine_details_page"
+            android:name=".health_dashboard"
             android:exported="false" />
         <activity
             android:name=".doctor_appointment"
@@ -22,11 +22,10 @@
             android:name=".store_dashboard"
             android:exported="false" />
         <activity
-            android:name=".health_dashboard"
+            android:name=".medicine_details_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
