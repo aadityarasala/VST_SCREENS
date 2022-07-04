@@ -18,6 +18,8 @@ public class medicine_details_page extends AppCompatActivity {
     //importing data local
     private static final String[] medicine = new String[]{
         "Cyclobenzaprine","Hydrochlorothiazide","Pantoprazole"};
+    private static final String[] duration = new String[]{
+            "Daily","Weekly","Monthly"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +33,13 @@ public class medicine_details_page extends AppCompatActivity {
         //adapter = new MedicineAdapter(medicine_details_page.this, data.getmedicinelist());
 
 
-        AutoCompleteTextView editText  = findViewById(R.id.actv);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,medicine);
-        editText.setAdapter(adapter);
+        AutoCompleteTextView editText1  = findViewById(R.id.actv_medicine);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,medicine);
+        editText1.setAdapter(adapter1);
+
+        AutoCompleteTextView editText2  = findViewById(R.id.actv_duration);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line,duration);
+        editText2.setAdapter(adapter2);
 
 
     }
