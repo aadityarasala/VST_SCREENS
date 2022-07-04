@@ -66,7 +66,7 @@
                 android:textStyle="bold"
                 android:text="DURATION"
                 android:textColor="@color/white"
-                android:layout_marginTop="112dp"
+                android:layout_marginTop="100dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"/>
             <AutoCompleteTextView
@@ -78,6 +78,22 @@
                 android:layout_marginTop="1dp"
                 android:hint="Select Duration"
                 android:completionThreshold="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@color/drcard_blue"
+                android:gravity="center|left"
+                android:textSize="18dp"
+                android:layout_gravity="left"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textStyle="bold"
+                android:text="Frequency"
+                android:textColor="@color/white"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
