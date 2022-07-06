@@ -382,7 +382,7 @@
                     android:layout_weight="1"/>
                 </RadioGroup>
             </LinearLayout>
-            
+
             <Button
                 android:id="@+id/Add"
                 android:layout_width="100dp"
@@ -392,6 +392,19 @@
                 android:textSize="18dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/btn_add"/>
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:background="@drawable/btn_layout_medicine"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
 
         </LinearLayout>
     </ScrollView>

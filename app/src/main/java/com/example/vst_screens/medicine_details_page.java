@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
-import com.example.vst_screens.inventory.data;
+import java.util.ArrayList;
 
 public class medicine_details_page extends AppCompatActivity {
 
@@ -33,6 +35,16 @@ public class medicine_details_page extends AppCompatActivity {
     int counter3=0;
     EditText showvalue4;
     int counter4=0;
+
+    //listview
+    ArrayList<String> list;
+
+//    String tutorials[]
+//            = { "Algorithms", "Data Structures",
+//            "Languages", "Interview Corner",
+//            "GATE", "ISRO CS",
+//            "UGC NET CS", "CS Subjects",
+//            "Web Technologies" };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +71,35 @@ public class medicine_details_page extends AppCompatActivity {
         showvalue2 = (EditText) findViewById(R.id.counter2);
         showvalue3 = (EditText) findViewById(R.id.counter3);
         showvalue4 = (EditText) findViewById(R.id.counter4);
+
+        //list
+
+        ListView listview = findViewById(R.id.listview);
+        Button btn = findViewById(R.id.Add);
+        AutoCompleteTextView actv_medicine = findViewById(R.id.actv_medicine);
+        AutoCompleteTextView actv_duration = findViewById(R.id.actv_duration);
+
+        list = new ArrayList<String>();
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_dropdown_item_1line,list);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String names = actv_medicine.getText().toString();
+                list.add(names);
+                listview.setAdapter (arrayAdapter);
+                arrayAdapter.notifyDataSetChanged();
+
+            }
+        });
+        //l = findViewById(R.id.list);
+
+
+//        ArrayAdapter<String> arr;
+//        arr
+//                = new ArrayAdapter<String>(
+//                this,
+//                R.layout.support_simple_spinner_dropdown_item, tutorials);
+//        l.setAdapter(arr);
     }
 
     public void countSub1(View view){
