@@ -92,8 +92,6 @@ public class medicine_details_page extends AppCompatActivity {
             }
         });
         //l = findViewById(R.id.list);
-
-
 //        ArrayAdapter<String> arr;
 //        arr
 //                = new ArrayAdapter<String>(

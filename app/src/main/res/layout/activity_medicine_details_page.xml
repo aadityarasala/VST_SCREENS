@@ -394,17 +394,26 @@
                 android:background="@drawable/btn_add"/>
 
 
-            <ListView
-                android:id="@+id/listview"
-                android:background="@drawable/btn_layout_medicine"
+<!--            <ListView-->
+<!--                android:id="@+id/listview"-->
+<!--                android:background="@drawable/btn_layout_medicine"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_marginBottom="15dp">
 
+            </TableLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
