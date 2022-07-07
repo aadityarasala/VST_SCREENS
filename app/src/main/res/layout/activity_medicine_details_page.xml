@@ -56,9 +56,9 @@
                 android:layout_marginEnd="20dp"
                 android:completionThreshold="1"
                 android:dropDownHeight="90dp"
+                android:hint="Select Medicine"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Select Medicine" />
+                android:textColorHint="@color/black" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -83,9 +83,9 @@
                 android:layout_marginEnd="20dp"
                 android:completionThreshold="1"
                 android:dropDownHeight="90dp"
+                android:hint="Select Duration"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Select Duration" />
+                android:textColorHint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -150,9 +150,8 @@
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="6dp"
                         android:gravity="center"
-                        android:textSize="18dp"
                         android:textColor="@color/black"
-                        />
+                        android:textSize="18dp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="20dp"
@@ -169,8 +168,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -229,8 +228,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -272,8 +271,8 @@
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="6dp"
                         android:gravity="center"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="20dp"
@@ -290,8 +289,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="1dp"
+                android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -333,7 +332,7 @@
                         android:layout_marginStart="6dp"
                         android:layout_marginEnd="6dp"
                         android:gravity="center"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:layout_width="20dp"
@@ -354,32 +353,35 @@
                 android:layout_marginEnd="20dp"
                 android:background="@color/white"
                 android:gravity="center"
+                android:orientation="horizontal"
                 android:paddingLeft="15dp"
-                android:paddingRight="15dp"
-                android:orientation="horizontal">
+                android:paddingRight="15dp">
+
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:outlineAmbientShadowColor="@color/black">
-                <RadioButton
-                    android:id="@+id/before"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Before Meal"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"/>
-                <RadioButton
-                    android:id="@+id/after"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="After Meal"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-                    android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:id="@+id/before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Before Meal"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="After Meal"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -387,32 +389,151 @@
                 android:id="@+id/Add"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:text="ADD"
-                android:textStyle="bold"
-                android:textSize="18dp"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/btn_add"/>
+                android:background="@drawable/btn_add"
+                android:text="ADD"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
 
-<!--            <ListView-->
-<!--                android:id="@+id/listview"-->
-<!--                android:background="@drawable/btn_layout_medicine"-->
-<!--                android:layout_marginStart="20dp"-->
-<!--                android:layout_marginTop="100dp"-->
-<!--                android:layout_marginEnd="20dp"-->
-<!--                android:layout_marginBottom="15dp"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                />-->
+            <!--            <ListView-->
+            <!--                android:id="@+id/listview"-->
+            <!--                android:background="@drawable/btn_layout_medicine"-->
+            <!--                android:layout_marginStart="20dp"-->
+            <!--                android:layout_marginTop="100dp"-->
+            <!--                android:layout_marginEnd="20dp"-->
+            <!--                android:layout_marginBottom="15dp"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                />-->
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="15dp">
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Duration" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Mor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Noon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Eve" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Night" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="Before" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:textSize="14dp"
+                        android:textColor="@color/drcard_blue"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:text="After" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+                </TableRow>
             </TableLayout>
         </LinearLayout>
     </ScrollView>
