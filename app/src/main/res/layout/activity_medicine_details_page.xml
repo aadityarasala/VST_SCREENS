@@ -360,8 +360,7 @@
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:outlineAmbientShadowColor="@color/black">
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/before"
@@ -423,116 +422,140 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Name" />
+                        android:text="Name"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Duration" />
+                        android:text="Duration"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Mor" />
+                        android:text="Mor"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Noon" />
+                        android:text="Noon"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Eve" />
+                        android:text="Eve"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Night" />
+                        android:text="Night"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="Before" />
+                        android:text="Before"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
-                        android:textSize="14dp"
-                        android:textColor="@color/drcard_blue"
-                        android:textStyle="bold"
                         android:padding="5dp"
-                        android:text="After" />
+                        android:text="After"
+                        android:textColor="@color/drcard_blue"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
                 </TableRow>
 
                 <TableRow>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"/>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_column="1" />
+                        android:layout_column="1"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
